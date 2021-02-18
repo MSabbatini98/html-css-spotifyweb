@@ -1,3 +1,83 @@
 @import "aside.css";
 @import "main.css";
 @import "footer.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border:1px solid  blue;
+}
+body .banner_top {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    left: 230px;
+    right: 0;
+    height: 90px;
+    background-color: tomato;
+    /* background-color: rgba(8, 11, 18, 0.5); */
+
+    z-index: 10;
+}
+
+body .btn_upgrade{
+    color: white;
+    background-color: unset;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: 1px solid  white;
+    border-radius: 23px;
+}
+body .banner_top .btn_upgrade{
+    margin-right: 20px;
+}
+
+/* !      RESPONSIVE:                    */
+/* !  approccio mobile first             */
+/* !  XS =  552px                        */
+/* !  S  =  639px                        */
+/* !  M  =  878px                        */
+/* !  L  =  1440px                       */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/*  XS = 552 px approccio mobile first*/
+@media screen and  (max-width:552px) {
+    body{
+        background-color: teal;
+    }
+    aside {
+        background-color: lightskyblue;
+        width: 50px;
+    }
+    aside div {
+        visibility: hidden;
+    }
+    body .banner_top {
+        left: 50px;
+    }
+}
+
+/*  S = 639 */
+@media screen and  (max-width:639px) {
+    body{
+        background-color: greenyellow;
+    }
+}
+
+/*  M = 878px*/
+@media screen and  (max-width:878px) {
+    body{
+        background-color: purple;
+    }
+}
+
+/*  L = 1440 */
+@media screen and  (max-width:1440px) {
+    body{
+        background-color: khaki;
+    }
+}

@@ -1,0 +1,43 @@
+main{
+    /* background-color: #141922; */
+    margin: 90px 0 90px 230px;
+}
+section{
+    display: flex;
+}
+.song_box{
+    height: 280px;
+    width: 180px;
+}
+
+/* !      RESPONSIVE:                    */
+/* !  approccio mobile first             */
+/* !  XS =  552px                        */
+/* !  S  =  639px                        */
+/* !  M  =  878px                        */
+/* !  L  =  1440px                       */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/*  XS = 552 px approccio mobile first*/
+@media screen and  (max-width:552px) {
+    main{
+        /* background-color: #141922; */
+        margin: 90px 0 90px 50px;
+    }
+
+}
+
+/*  S = 639 */
+@media screen and  (max-width:639px) {
+
+}
+
+/*  M = 878px*/
+@media screen and  (max-width:878px) {
+
+}
+
+/*  L = 1440 */
+@media screen and  (max-width:1440px) {
+
+}
