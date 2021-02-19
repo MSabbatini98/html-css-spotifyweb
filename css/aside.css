@@ -8,18 +8,16 @@ aside {
     background-color: black;
     color: #717171;
     display: flex;
+    padding-left: 20px;
     flex-direction: column;
     /* flex-wrap: wrap; */
-    /* align-items: flex-start; */
+    align-items: flex-start;
         overflow: auto;
         /* background-color: thistle; */
 }
-.install_app, .user{
-    align-self: flex-end;
-}
 aside .logo{
     height: 40px;
-    margin: 15px 0 20px 20px;
+    margin: 15px 0 20px 0;
 }
 aside .logo img{
     height: 100%;
@@ -27,35 +25,40 @@ aside .logo img{
 }
 aside ul li{
     list-style: none;
-    line-height: 20px;
 }
 aside li h3{
-    margin-left: 50px;
-    font-size: 16px;
-    padding: 18px 0 0 10px;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 35px;
 }
 aside li:hover h3 {
     color: #d2d2d2;
 }
 aside ul .option {
-    background-size: 70px 45px;
+    background-size: 60px 65px;
+    background-position: -12px -20px;
     background-repeat: no-repeat;
 }
 
-aside ul #home::after{
+aside #home:after {
     content: "";
-    height: 20px;
-    width: 3px;
-    border-color:#adff2f;    
-}
+    position: absolute;
+    z-index: 1;
+    border-right: 1px solid black;
+    display: block;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+  }
 aside ul #home{
-    background-image: url("../img/aside/home_7.svg");
+    background-image: url("../img/aside/home_9.svg");
+    /* background-color: lightgoldenrodyellow; */
 }
 aside ul #search{
-    background-image: url("../img/aside/search_2.svg");
+    background-image: url("../img/aside/home_8.svg");
 }
 aside ul #library{
-    background-image: url("../img/aside/library_2.svg");
+    background-image: url("../img/aside/home_7.svg");
 }
 .menu_icons {
     display: inline-block;
@@ -63,11 +66,6 @@ aside ul #library{
 }
 
 /* Playlist */
-
-aside .playlist{
-    margin-left: 20px;
-    /* height: 50%; */
-}
 aside h2{
     color: white;
     text-transform: uppercase;
@@ -112,24 +110,36 @@ aside .playlist h3{
     text-transform: capitalize;
 }
 
-/* download */
-/* aside .install_app, 
-aside .user{
+/* download */ 
+aside .bottom_aside{
     position: absolute;
-    bottom: 0px; */
-
+    bottom: 0px;
 }
+
 aside .install_app p {
     background-image: url("../img/aside/download.svg");
     background-repeat: no-repeat;
     background-position-x: 0px;
     background-size: contain;
-    margin-left: 20px;
     padding-left:20px ;
 }
+aside .install_app::after{
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    margin-top: 10px;
+    background-color: lightgreen;
+}
 /* user */
+aside .bottom_aside{
+    padding: 10px 0px;
+}
 aside .user{
-    padding: 10px 20px;
+    margin: 10px 0 5px 0;
 }
 aside .profile_pic {
     height: 30px;
