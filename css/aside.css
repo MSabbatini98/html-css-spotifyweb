@@ -10,11 +10,10 @@ aside {
     display: flex;
     padding-left: 20px;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     align-items: flex-start;
-        overflow: auto;
         /* background-color: thistle; */
 }
+
 aside .logo{
     height: 40px;
     margin: 15px 0 20px 0;
@@ -23,13 +22,11 @@ aside .logo img{
     height: 100%;
     width: auto;
 }
-aside ul li{
-    list-style: none;
-}
-aside li h3{
+
+aside .side_menu h3{
     font-size: 14px;
     line-height: 30px;
-    padding-left: 35px;
+    padding: 0 0 10px 35px;
 }
 aside li:hover h3 {
     color: #d2d2d2;
@@ -44,25 +41,22 @@ aside #home:after {
     content: "";
     position: absolute;
     z-index: 1;
-    border-right: 1px solid black;
     display: block;
-    top: 0%;
-    right: 0%;
-    height: 100%;
+    top: 20%;
+    left: 0%;
+    height: 80%;
+    width: 2px;
+    background-color: #adff2f;
   }
 aside ul #home{
     background-image: url("../img/aside/home_9.svg");
     /* background-color: lightgoldenrodyellow; */
 }
 aside ul #search{
-    background-image: url("../img/aside/home_8.svg");
+    background-image: url("../img/aside/search_2.svg");
 }
 aside ul #library{
-    background-image: url("../img/aside/home_7.svg");
-}
-.menu_icons {
-    display: inline-block;
-        border: 2px greenyellow solid;
+    background-image: url("../img/aside/library_2.svg");
 }
 
 /* Playlist */
@@ -110,6 +104,7 @@ aside .playlist h3{
     text-transform: capitalize;
 }
 
+/* bottom part */
 /* download */ 
 aside .bottom_aside{
     position: absolute;
@@ -132,7 +127,7 @@ aside .install_app::after{
     bottom: 0;
     height: 2px;
     margin-top: 10px;
-    background-color: lightgreen;
+    background-color: currentColor;
 }
 /* user */
 aside .bottom_aside{
@@ -167,29 +162,73 @@ aside .profile_pic img {
 
 /*  XS = 552 px approccio mobile first*/
 @media screen and  (max-width:552px) {
-    body{
-        background-color: teal;
+    aside {
+        background-color: lightskyblue;
+        width: 50px;
+        padding: 0;
+        margin: 0;
+    }
+    aside .big_aside{
+        display: none;
+    }
+    aside .small_aside{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        justify-content: space-between;
+        align-items: center; 
+        background-color: black;
+        width: 100%;
+        height: calc(100% - 90px);
+        padding: 5px 10px;
+    }
+    aside .top_part_xs .img_xs_logo{
+        margin: 5px 0;
+    }
+    aside .top_part_xs .img_menu_xs img {
+        transform: scale(1.8) ;
+        /* filter to make #a3a3a3*/
+        filter: invert(60%) sepia(58%) saturate(0%) hue-rotate(228deg) brightness(97%) contrast(90%);
+    }
+    aside .top_part_xs a#logo_xs{
+        transform: scale(1.35);
+    }
+    aside .top_part_xs .img_menu_xs #home{
+        transform: scale(1.3);
+        /* trasforma #a3a3a3 in #d2d2d2 */
+        filter: invert(64%) sepia(90%) saturate(0%) hue-rotate(237deg) brightness(122%) contrast(75%);
+    }
+    aside .top_part_xs a{
+        display: block;
+        padding: 10px 0 5px 0 ;
+    }
+    aside .small_aside img{
+        width: 100%;
+        height: 23px;
+    }
+    aside .bottom_part_xs a#download img{
+        transform: scale(0.8);
+    }
+    aside .bottom_part_xs a#profile img{
+        background-color: lightskyblue;
+        height: 30px;
+        width: auto;
+        border-radius: 50%;
     }
 
 }
 
-/*  S = 639 */
-@media screen and  (max-width:639px) {
-    body{
-        background-color: greenyellow;
+ /* da S in poi */
+@media screen and  (min-width:553px) {
+    aside .small_aside{
+        display: none;
     }
 }
-
-/*  M = 878px*/
-@media screen and  (max-width:878px) {
-    body{
-        background-color: purple;
+@media screen and (max-height:668px){
+    aside .bottom_aside{
+        display: none;
     }
-}
-
-/*  L = 1440 */
-@media screen and  (max-width:1440px) {
-    body{
-        background-color: khaki;
+    footer {
+        background-color: royalblue!important;
     }
 }

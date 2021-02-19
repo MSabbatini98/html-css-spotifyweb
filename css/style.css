@@ -20,12 +20,14 @@ body .banner_top {
     left: 230px;
     right: 0;
     height: 90px;
-    background-color: tomato;
-    /* background-color: rgba(8, 11, 18, 0.5); */
+    /* background-color: tomato; */
+    background-color: rgba(8, 11, 18, 0.8);
 
     z-index: 10;
 }
-
+ul li{
+    list-style: none;
+}
 body .btn_upgrade{
     color: white;
     background-color: unset;
@@ -58,13 +60,7 @@ body .banner_top .btn_upgrade{
     body{
         background-color: teal;
     }
-    aside {
-        background-color: lightskyblue;
-        width: 50px;
-    }
-    aside div {
-        visibility: hidden;
-    }
+
     body .banner_top {
         left: 50px;
     }
