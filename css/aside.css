@@ -4,7 +4,147 @@ aside {
     top: 0;
     bottom: 0;
     width: 230px;
-    /* background-color: black; */
+    margin-bottom: 90px;
+    background-color: black;
+    color: #717171;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+        overflow: auto;
+        /* background-color: thistle; */
+}
+.install_app, .user{
+    align-self: flex-end;
+}
+aside .logo{
+    height: 40px;
+    margin: 15px 0 20px 20px;
+}
+aside .logo img{
+    height: 100%;
+    width: auto;
+}
+aside ul li{
+    list-style: none;
+    line-height: 20px;
+}
+aside li h3{
+    margin-left: 50px;
+    font-size: 16px;
+    padding: 18px 0 0 10px;
+}
+aside li:hover h3 {
+    color: #d2d2d2;
+}
+aside ul .option {
+    background-size: 70px 45px;
+    background-repeat: no-repeat;
+}
+
+aside ul #home::after{
+    content: "";
+    height: 20px;
+    width: 3px;
+    border-color:#adff2f;    
+}
+aside ul #home{
+    background-image: url("../img/aside/home_7.svg");
+}
+aside ul #search{
+    background-image: url("../img/aside/search_2.svg");
+}
+aside ul #library{
+    background-image: url("../img/aside/library_2.svg");
+}
+.menu_icons {
+    display: inline-block;
+        border: 2px greenyellow solid;
+}
+
+/* Playlist */
+
+aside .playlist{
+    margin-left: 20px;
+    /* height: 50%; */
+}
+aside h2{
+    color: white;
+    text-transform: uppercase;
+    height: 10px;
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+}
+
+/* nuova playlist */
+aside .new_playlist{
+    margin-bottom: 10px;
+}
+aside .square_plus {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 37px;
+    width: 37px;
+    background-color: #a3a3a3;
+}
+aside .fa-plus {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: black;
+}
+aside .playlist h3{
+    display: inline-block;
+    text-transform: capitalize;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+/* playlist list*/
+.playlist .playlist_list{
+    overflow: auto;
+}
+.playlist_list li{
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* download */
+/* aside .install_app, 
+aside .user{
+    position: absolute;
+    bottom: 0px; */
+
+}
+aside .install_app p {
+    background-image: url("../img/aside/download.svg");
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-size: contain;
+    margin-left: 20px;
+    padding-left:20px ;
+}
+/* user */
+aside .user{
+    padding: 10px 20px;
+}
+aside .profile_pic {
+    height: 30px;
+    width: 30px;
+    background-color: lightblue;
+    border-radius: 50%;
+}
+aside .profile_pic, 
+aside .user p{
+    display: inline-block;
+    vertical-align: middle;
+}
+aside .profile_pic img {
+    width: 100%;
+    height: auto;
 }
 
 /* !      RESPONSIVE:                    */

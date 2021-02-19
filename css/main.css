@@ -9,7 +9,7 @@ section{
         border: 5px solid violet;
 
 }
-h2{
+main h2{
     font-size: 17px;
     color: white;
     width: 100%;
@@ -79,7 +79,7 @@ header ul li#evidenza::before{
 
 /*  XS = 552 px approccio mobile first*/
 @media screen and  (max-width:552px) {
-    
+
     main{
         /* background-color: #141922; */
         margin: 90px 0 90px 50px;
