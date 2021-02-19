@@ -24,11 +24,23 @@ Prev
 Next
 <i class="fas fa-step-forward"></i>
 
+Redo
+<i class="fas fa-redo-alt"></i>
+
 List 
 <i class="fas fa-list-ul"></i>
 
 Screen
 <i class="fas fa-desktop"></i>
 
-Volume
+Volume MAX
 <i class="fas fa-volume-up"></i>
+
+Volume MID
+<i class="fas fa-volume-down"></i>
+
+Volume LOW
+<i class="fas fa-volume-off"></i>
+
+Volume MUTE
+<i class="fas fa-volume-mute"></i>
