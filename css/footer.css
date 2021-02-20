@@ -4,9 +4,118 @@ footer{
     left: 0;
     right: 0;
     height: 90px;
-    background-color: #282828;
+    /* background-color: #282828; */
+    background-color: turquoise;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/** parte sinistra*************************** */
+footer .player_left{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-grow: 1; */
+        background-color: royalblue;
+}
+footer .song_info #song_title{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+footer .song_cover {
+    width: 42px;
+    height: 42px;
+    margin: 10px;
+}
+footer .song_cover img{
+    width: 100%;
+    height: auto;
+}
+footer .song_info #song_author{
+    /* font shorthand: font-weight font-size / line height */
+    font-size: 12px;
+    font-weight: normal ;
+    color: #878787;
+}
+footer .song_action{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 40px;
+    width: auto;
+    border: springgreen 3px solid;
+}
+footer .song_action i {
+    margin: 10px 5px 10px 15px;
+}
+
+/** parte centrale*************************** */
+footer .player_middle{
+    /* flex-grow: 2; */
+    width: 50%;
+        background-color: red;
+    padding-top: 10px;
+
+}
+footer .upper_player {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+footer .upper_player ul li{
+    display: inline-block;
+    list-style: none;
+    line-height: 25px;
+    margin: 10px 20px 0 20px;
+    /* width: calc((100% - 130px)/5); */
+}
+footer .lower_player {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 16px;
+}
+footer .player_middle .lower_player small,
+footer .player_middle .lower_player .progression{
+    display: inline-block;
+    vertical-align: middle;
+}
+footer .player_middle .lower_player small{
+    width: 25px;
+    font-size:12px;
+    color: white;
+}
+footer .progression p{
+    visibility: hidden;
+}
+footer .progression{
+    position: relative;
+    line-height: 5px;
+    background-color: #5a5a5a;
+    width: calc(100% - 100px);
+    margin: auto;
+    border-radius: 3px;
+}
+footer .progression::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 77%;
+    background-color: #c1c1c1;
+    border-radius: 3px;
+}
+footer .upper_player .fa-play-circle{
+    transform: scale(2);
+}
+/** parte destra***************************** */
+footer .player_right{
+    /* flex-grow: 1; */
+        background-color: seashell;
+}
 
 /* !      RESPONSIVE:                    */
 /* !  approccio mobile first             */
