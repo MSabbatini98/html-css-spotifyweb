@@ -4,8 +4,8 @@ footer{
     left: 0;
     right: 0;
     height: 90px;
-    /* background-color: #282828; */
-    background-color: turquoise;
+    background-color: #282828;
+        /* background-color: turquoise; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +18,7 @@ footer .player_left{
     justify-content: space-evenly;
     align-items: center;
     /* flex-grow: 1; */
-        background-color: royalblue;
+        /* background-color: royalblue; */
 }
 footer .song_info #song_title{
     font-size: 14px;
@@ -44,9 +44,8 @@ footer .song_action{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 40px;
     width: auto;
-    border: springgreen 3px solid;
+        /* border: springgreen 3px solid; */
 }
 footer .song_action i {
     margin: 10px 5px 10px 15px;
@@ -56,19 +55,24 @@ footer .song_action i {
 footer .player_middle{
     /* flex-grow: 2; */
     width: 50%;
-        background-color: red;
     padding-top: 10px;
+        /* background-color: red; */
 
+}
+footer .fas, footer .far{
+    color: white;
+    /* background-color: red; */
 }
 footer .upper_player {
     text-align: center;
     margin: 0 0 10px 0;
+    color: white;
 }
 footer .upper_player ul li{
     display: inline-block;
     list-style: none;
     line-height: 25px;
-    margin: 10px 20px 0 20px;
+    margin: 10px 10px 0 10px;
     /* width: calc((100% - 130px)/5); */
 }
 footer .lower_player {
@@ -84,6 +88,7 @@ footer .player_middle .lower_player .progression{
 footer .player_middle .lower_player small{
     width: 25px;
     font-size:12px;
+    margin: 0 15px;
     color: white;
 }
 footer .progression p{
@@ -93,8 +98,9 @@ footer .player_middle .progression{
     position: relative;
     line-height: 5px;
     background-color: #5a5a5a;
-    width: calc(100% - 100px);
+    width: calc(100% - 150px);
     margin: auto;
+    padding: 0 10px;
     border-radius: 3px;
 }
 footer .player_middle .progression::after{
@@ -104,7 +110,7 @@ footer .player_middle .progression::after{
     top: 0;
     bottom: 0;
     left: 0;
-    right: 77%;
+    right: 50%;
     background-color: #c1c1c1;
     border-radius: 3px;
 }
@@ -114,7 +120,7 @@ footer .upper_player .fa-play-circle{
 /** parte destra***************************** */
 footer .player_right{
     /* flex-grow: 1; */
-        background-color: purple;
+            /* background-color: purple; */
         width: auto;
         height: 100%;
 }
@@ -136,9 +142,9 @@ footer .player_right .progression{
     vertical-align: middle;
     position: relative;
     height: 6px;
-    background-color: royalblue;
+        /* background-color: royalblue; */
     border-radius: 3px;
-    margin: auto;
+    margin: 0 10px;
 }
 
 footer .player_right .progression::after{
