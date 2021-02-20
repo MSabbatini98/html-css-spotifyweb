@@ -89,7 +89,7 @@ footer .player_middle .lower_player small{
 footer .progression p{
     visibility: hidden;
 }
-footer .progression{
+footer .player_middle .progression{
     position: relative;
     line-height: 5px;
     background-color: #5a5a5a;
@@ -97,7 +97,7 @@ footer .progression{
     margin: auto;
     border-radius: 3px;
 }
-footer .progression::after{
+footer .player_middle .progression::after{
     content: "";
     display: block;
     position: absolute;
@@ -114,8 +114,44 @@ footer .upper_player .fa-play-circle{
 /** parte destra***************************** */
 footer .player_right{
     /* flex-grow: 1; */
-        background-color: seashell;
+        background-color: purple;
+        width: auto;
+        height: 100%;
 }
+footer .player_right ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer .player_right ul li{
+    display: inline-block;
+    text-align: right;
+    list-style: none;
+    margin:32.5px 20px;
+    line-height: 25px;
+}
+footer .player_right .progression{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    height: 6px;
+    background-color: royalblue;
+    border-radius: 3px;
+    margin: auto;
+}
+
+footer .player_right .progression::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 25%;
+    background-color: #c1c1c1;
+    border-radius: 3px;
+} 
 
 /* !      RESPONSIVE:                    */
 /* !  approccio mobile first             */
