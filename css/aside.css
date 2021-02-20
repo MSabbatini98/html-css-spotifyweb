@@ -42,10 +42,10 @@ aside #home:after {
     position: absolute;
     z-index: 1;
     display: block;
-    top: 20%;
+    top: 73px;
     left: 0%;
-    height: 80%;
-    width: 2px;
+    height: 37px;
+    width: 3px;
     background-color: #adff2f;
   }
 aside ul #home{
