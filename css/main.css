@@ -4,17 +4,8 @@ main{
     background-color: #141922;
     margin: 90px 0 90px 230px;
 }
-section{
-    margin: 20px;
-        border: 5px solid violet;
 
-}
-main h2{
-    font-size: 17px;
-    color: white;
-    width: 100%;
-    padding: 20px 0;
-}
+/*  *********************************** header  */
 header{
     /* margin-top: 90px; */
     background-color: #141922;
@@ -53,20 +44,55 @@ header ul li#evidenza::before{
     margin: auto;
 }
 
+/*  ************************************* main  */
+section{
+    margin: 20px;
+        border: 5px solid violet;
+
+}
+main h2{
+    font-size: 17px;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+/*  ******************* section recently played */
+
 .song_slide{
-        display: flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.song_box{
+    height: 280px;
+    padding: 5px;
+        border: turquoise 2px solid;
+}
+.song_box img {
+    width:100% ;
+    max-width: 180px;
+}
+.song_album {
+    width: 180px;
+    height: auto;
+}
+/* ******************************* section jump */
+#jump .song_slide, 
+#popular .song_slide{
+    display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-content: flex-start;
 }
 
-.song_box{
-    display: block;
-    height: 280px;
-    width: calc(100%/6);
-}
-.song_box img {
-    width: 100%;
+/* **************************** section popular */
+
+#popular img{
+    border-radius: 50%;
+    
 }
 
 /* !      RESPONSIVE:                    */

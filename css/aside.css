@@ -168,7 +168,8 @@ aside .profile_pic img {
         padding: 0;
         margin: 0;
     }
-    aside .big_aside{
+    aside .big_aside,
+    aside #home::after {
         display: none;
     }
     aside .small_aside{

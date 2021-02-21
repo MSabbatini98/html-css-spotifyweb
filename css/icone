@@ -44,3 +44,39 @@ Volume LOW
 
 Volume MUTE
 <i class="fas fa-volume-mute"></i>
+
+            <div class="song_slide">
+                <div class="song_box">
+                    <img src="img/songs/AJR_100bd.jpg" alt="Album AJR">
+                    <h3>100 bad days</h3>
+                    <small>AJR</small>
+                </div>
+                <div class="song_box">
+                    <div class="song_album">
+                        <img src="img/songs/born-this-way-Lady-Gaga.jpg" alt="Album Born this way">
+                    </div>
+                    <h3>Born this way</h3>
+                    <small>Lady Gaga</small>
+                </div>
+                
+                <div class="song_box">
+                    <img src="img/songs/four_season_vivaldo.jpg" alt="Album Vivaldi 4 stagioni">
+                    <h3>Le quattro stagioni</h3>
+                    <small>Philarmonic  of Prague</small>
+                </div>
+                <div class="song_box">
+                    <img src="img/songs/greatest-showman-this-is-me.jpg" alt="Album Greatest showman">
+<!-- todo coso che mette i puntini dopo tot righe -->
+                    <h3>This is ME  </h3>
+                    <small>Keala Settle</small>
+                </div>
+                <div class="song_box">
+                    <img src="img/songs/let_it_be-beetles.jpg" alt="Album Let it Be">
+                    <h3>Let it be </h3>
+                    <small>Beatles</small>
+                </div>
+                <div class="song_box">
+                    <img src="img/songs/Lose_yourself_eminem.jpg" alt="Album Love yourself">
+                    <h3>Lose yourself</h3>
+                    <small>Eminem </small>
+                </div>
