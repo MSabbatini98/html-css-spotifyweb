@@ -26,8 +26,8 @@ footer .song_info #song_title{
     color: white;
 }
 footer .song_cover {
-    width: 42px;
-    height: 42px;
+    width: 45px;
+    height: 45px;
     margin: 10px;
 }
 footer .song_cover img{
@@ -176,21 +176,15 @@ footer .player_right .progression::after{
 
 /*  S = 639 */
 @media screen and  (max-width:639px) {
-    body{
-        background-color: greenyellow;
-    }
+
 }
 
 /*  M = 878px*/
 @media screen and  (max-width:878px) {
-    body{
-        background-color: purple;
-    }
+
 }
 
 /*  L = 1440 */
 @media screen and  (max-width:1440px) {
-    body{
-        background-color: khaki;
-    }
+
 }

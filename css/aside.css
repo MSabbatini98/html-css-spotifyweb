@@ -161,6 +161,7 @@ aside .profile_pic img {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 /*  XS = 552 px approccio mobile first*/
+/* da 0 a 552 */
 @media screen and  (max-width:552px) {
     aside {
         background-color: lightskyblue;
@@ -218,13 +219,13 @@ aside .profile_pic img {
     }
 
 }
-
- /* da S in poi */
+ /* da 553px in poi */
 @media screen and  (min-width:553px) {
     aside .small_aside{
         display: none;
     }
 }
+/* da 0 a 668 */
 @media screen and (max-height:668px){
     aside .bottom_aside{
         display: none;
