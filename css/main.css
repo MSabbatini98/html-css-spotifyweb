@@ -19,13 +19,13 @@ header ul{
 header ul li { 
     position: relative;
     list-style: none;
+    font-variant: unicase;
     text-transform: uppercase;
-    font-weight: bold;
-    line-height: 50px;
+    font-weight: bolder;
     margin: 10px;
     padding: 5px;
     color: #7d7f84;
-        border: 2px solid green;
+        /* border: 2px solid green; */
 }
 header ul li:hover {
     color:white;
@@ -35,11 +35,11 @@ header ul li#evidenza::before{
     content: '';
     position: absolute;
     width: 40%;
-    height: 5px; 
+    height: 4px; 
     background:  #adff2f;
     top: 0;
     left: 0;
-    bottom: -45px;
+    bottom: -30px;
     right: 0;
     margin: auto;
 }
