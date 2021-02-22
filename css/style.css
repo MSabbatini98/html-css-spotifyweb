@@ -10,6 +10,7 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 body .banner_top {
     position: fixed;
@@ -41,6 +42,24 @@ body .btn_upgrade{
 body .banner_top .btn_upgrade{
     margin-right: 20px;
 }
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #adff2f;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #c8c8c8;
+}
+::-webkit-scrollbar-track{
+    background: black;
+    border-radius: 5px;
+    box-shadow: inset 7px 10px 12px #000;
+}
+
 
 .clearfix::after{
     content: "";
@@ -58,26 +77,33 @@ body .banner_top .btn_upgrade{
 
 /*  XS = 552 px approccio mobile first*/
 @media screen and  (max-width:552px) {
-    body{
-        background-color: teal;
-    }
-
     body .banner_top {
         left: 50px;
     }
 }
 
-/*  S = 639 */
-@media screen and  (max-width:639px) {
-
+/* todo warning screen too small */
+/* main .too_small{
+    display: none;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #141922;
 }
-
-/*  M = 878px*/
-@media screen and  (max-width:878px) {
-
+main .too_small img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
-
-/*  L = 1440 */
-@media screen and  (max-width:1440px) {
-
-}
+@media screen and (max-width:300px)  {
+    *{
+        display: none;
+    }
+    main .too_small{
+        display: block;
+        z-index: 15;
+    }
+    section{
+        border-color: silver;
+    }
+} */

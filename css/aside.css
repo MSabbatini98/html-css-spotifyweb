@@ -35,9 +35,7 @@ aside .side_menu h3{
     line-height: 30px;
     padding: 0 0 10px 35px;
 }
-aside li:hover h3 {
-    color: #d2d2d2;
-}
+
 aside ul .option {
     background-size: 60px 65px;
     background-position: -12px -20px;
@@ -114,6 +112,15 @@ aside .playlist h3{
     text-transform: capitalize;
 }
 
+aside .new_playlist:hover,
+aside .playlist li:hover, 
+aside li:hover h3 {
+    color: #d2d2d2;
+    cursor: pointer;
+}
+.new_playlist:hover .square_plus{
+    background-color: white;
+}
 /* bottom part */
 /* download */ 
 aside .bottom_aside{
@@ -126,7 +133,7 @@ aside .install_app p {
     background-repeat: no-repeat;
     background-position-x: 0px;
     background-size: contain;
-    padding-left:20px ;
+    padding-left:25px ;
 }
 aside .install_app::after{
     content: "";
