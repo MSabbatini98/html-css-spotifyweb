@@ -120,8 +120,8 @@ footer .upper_player .fa-play-circle{
 /** parte destra***************************** */
 footer .player_right{
     /* flex-grow: 1; */
-            /* background-color: purple; */
-        width: auto;
+            background-color: purple;
+        width: 30%;
         height: 100%;
 }
 footer .player_right ul{
@@ -134,9 +134,15 @@ footer .player_right ul li{
     display: inline-block;
     text-align: right;
     list-style: none;
-    margin:32.5px 20px;
-    line-height: 25px;
+    margin:35px 0px;
 }
+footer .player_right i{
+    margin: 0 10px;
+}
+footer .player_right ul:last-child li{
+    margin-right: 0;
+}
+
 footer .player_right .progression{
     display: inline-block;
     vertical-align: middle;
@@ -144,7 +150,6 @@ footer .player_right .progression{
     height: 6px;
         /* background-color: royalblue; */
     border-radius: 3px;
-    margin: 0 10px;
 }
 
 footer .player_right .progression::after{
@@ -168,23 +173,73 @@ footer .player_right .progression::after{
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 /*  XS = 552 px approccio mobile first*/
-@media screen and  (max-width:552px) {
-    body{
-        background-color: teal;
+/*  XS = 552 px approccio mobile first*/
+/* Da 100px a 552 PX */
+@media screen and (min-width: 100px) and  (max-width:552px) {
+    footer .player_right ul li{
+        margin:30px 0px;
+    }
+    footer .player_right i{
+        margin: 0 10px;
+    }
+    footer .player_right .progression{
+        display: none;
+    }
+
+
+    section{
+        border: 5px solid white;
     }
 }
 
 /*  S = 639 */
-@media screen and  (max-width:639px) {
-
+/* da 552 a 639 */
+@media screen and (min-width: 553px) and (max-width:639px)  {
+    section{
+        border: 5px solid red;
+    }
+    footer .player_right ul li{
+        margin:30px 0px;
+    }
+    footer .player_right i{
+        margin: 0 10px;
+    }
+    footer .player_right .progression{
+        display: none;
+    }
 }
 
 /*  M = 878px*/
-@media screen and  (max-width:878px) {
-
+@media screen and (min-width: 640px) and  (max-width:878px) {
+    section{
+        border: 5px solid blue;
+    }
+    footer .player_right ul li{
+        margin:10px 0px;
+    }
+    footer .player_right i{
+        margin: 0 10px;
+    }
+    footer .player_right .progression{
+        width: 135px;
+        margin-right: -20px;
+    }
+    
+    
 }
 
 /*  L = 1440 */
-@media screen and  (max-width:1440px) {
-
+@media screen and (min-width: 879px) and  (max-width:1440px) {
+    section{
+        border: 5px solid greenyellow;
+    }
+}
+/* XXS fino a 390 */
+@media screen and (max-width: 380px) {
+    footer .player_right ul li{
+        margin:5px 0px;
+    }
+    section{
+        border: 5px solid plum;
+    }
 }

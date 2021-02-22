@@ -10,13 +10,20 @@ aside {
     display: flex;
     padding-left: 20px;
     flex-direction: column;
+    overflow-y: hidden;
     align-items: flex-start;
-        /* background-color: thistle; */
+    height: calc(100% - 90px);
+    /* background-color: thistle; */
 }
-
+aside .big_aside{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: hidden;
+}
 aside .logo{
     height: 40px;
-    margin: 15px 0 20px 0;
+    margin: 30px 0 20px 0;
 }
 aside .logo img{
     height: 100%;
@@ -42,7 +49,7 @@ aside #home:after {
     position: absolute;
     z-index: 1;
     display: block;
-    top: 73px;
+    top: 87px;
     left: 0%;
     height: 37px;
     width: 3px;
@@ -94,8 +101,11 @@ aside .playlist h3{
 }
 
 /* playlist list*/
-.playlist .playlist_list{
-    overflow: auto;
+.playlist ul.playlist_list{
+    overflow-y: auto;
+    width: 190px;
+    height: calc(100% - 300px);
+
 }
 .playlist_list li{
     line-height: 34px;
@@ -151,7 +161,9 @@ aside .profile_pic img {
     width: 100%;
     height: auto;
 }
-
+.empty{
+    visibility: hidden;
+}
 /* !      RESPONSIVE:                    */
 /* !  approccio mobile first             */
 /* !  XS =  552px                        */
@@ -181,7 +193,7 @@ aside .profile_pic img {
         align-items: center; 
         background-color: black;
         width: 100%;
-        height: calc(100% - 90px);
+        height: 100%;
         padding: 5px 10px;
     }
     aside .top_part_xs .img_xs_logo{
@@ -225,9 +237,12 @@ aside .profile_pic img {
         display: none;
     }
 }
-/* da 0 a 668 */
-@media screen and (max-height:668px){
+/* da 0 a 668 scom */
+@media screen and (max-height:730px){
     aside .bottom_aside{
         display: none;
+    }
+    .playlist ul.playlist_list{
+        height: 40vh;
     }
 }
