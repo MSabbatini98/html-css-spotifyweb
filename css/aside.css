@@ -15,12 +15,14 @@ aside {
     height: calc(100% - 90px);
     /* background-color: thistle; */
 }
+/* ********************* Big Aside */
 aside .big_aside{
     display: flex;
     flex-direction: column;
     height: 100%;
     overflow-y: hidden;
 }
+/* ????????????????????? Top part */
 aside .logo{
     height: 40px;
     margin: 30px 0 20px 0;
@@ -29,19 +31,16 @@ aside .logo img{
     height: 100%;
     width: auto;
 }
-
 aside .side_menu h3{
     font-size: 14px;
     line-height: 30px;
     padding: 0 0 10px 35px;
 }
-
 aside ul .option {
     background-size: 60px 65px;
     background-position: -12px -20px;
     background-repeat: no-repeat;
 }
-
 aside #home:after {
     content: "";
     position: absolute;
@@ -52,7 +51,7 @@ aside #home:after {
     height: 37px;
     width: 3px;
     background-color: #adff2f;
-  }
+}
 aside ul #home{
     background-image: url("../img/aside/home_9.svg");
     /* background-color: lightgoldenrodyellow; */
@@ -64,7 +63,7 @@ aside ul #library{
     background-image: url("../img/aside/library_2.svg");
 }
 
-/* Playlist */
+/* ????????????????????? Playlist */
 aside h2{
     color: white;
     text-transform: uppercase;
@@ -73,7 +72,7 @@ aside h2{
     margin: 15px 0 20px 0;
 }
 
-/* nuova playlist */
+/* ????????????????????? nuova playlist */
 aside .new_playlist{
     margin-bottom: 10px;
 }
@@ -98,7 +97,7 @@ aside .playlist h3{
     font-size: 15px;
 }
 
-/* playlist list*/
+/* ????????????????????? playlist list*/
 .playlist ul.playlist_list{
     overflow-y: auto;
     width: 190px;
@@ -111,23 +110,23 @@ aside .playlist h3{
     font-weight: 700;
     text-transform: capitalize;
 }
-
 aside .new_playlist:hover,
 aside .playlist li:hover, 
-aside li:hover h3 {
+aside li:hover h3,
+aside .bottom_aside .install_app:hover p,
+aside .bottom_aside .user:hover p {
     color: #d2d2d2;
     cursor: pointer;
 }
 .new_playlist:hover .square_plus{
     background-color: white;
 }
-/* bottom part */
-/* download */ 
+
+/* ????????????????????? bottom part */
 aside .bottom_aside{
     position: absolute;
     bottom: 0px;
 }
-
 aside .install_app p {
     background-image: url("../img/aside/download.svg");
     background-repeat: no-repeat;
@@ -146,7 +145,8 @@ aside .install_app::after{
     margin-top: 10px;
     background-color: currentColor;
 }
-/* user */
+
+/* ????????????????????? user */
 aside .bottom_aside{
     padding: 10px 0px;
 }
@@ -168,9 +168,9 @@ aside .profile_pic img {
     width: 100%;
     height: auto;
 }
-.empty{
-    visibility: hidden;
-}
+
+
+
 /* !      RESPONSIVE:                    */
 /* !  approccio mobile first             */
 /* !  XS =  552px                        */
@@ -236,14 +236,15 @@ aside .profile_pic img {
         width: auto;
         border-radius: 50%;
     }
-
 }
+
  /* da 553px in poi */
 @media screen and  (min-width:553px) {
     aside .small_aside{
         display: none;
     }
 }
+
 /* da 0 a 668 scom */
 @media screen and (max-height:730px){
     aside .bottom_aside{

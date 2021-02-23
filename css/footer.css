@@ -12,12 +12,11 @@ footer{
     align-items: center;
 }
 
-/** parte sinistra*************************** */
+/* ????????????????????? parte sinistra */
 footer .player_left{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* flex-grow: 1; */
         /* background-color: royalblue; */
 }
 footer .song_info #song_title{
@@ -52,9 +51,8 @@ footer .song_action i {
     margin: 10px 5px 10px 15px;
 }
 
-/** parte centrale*************************** */
+/* ????????????????????? parte centrale */
 footer .player_middle{
-    /* flex-grow: 2; */
     width: 50%;
     padding-top: 10px;
         /* background-color: red; */
@@ -74,7 +72,6 @@ footer .upper_player ul li{
     list-style: none;
     line-height: 25px;
     margin: 10px 10px 0 10px;
-    /* width: calc((100% - 130px)/5); */
 }
 footer .lower_player {
     width: 100%;
@@ -121,9 +118,9 @@ footer .player_middle .progression::after{
 footer .upper_player .fa-play-circle{
     transform: scale(2);
 }
-/** parte destra***************************** */
+
+/* ????????????????????? parte destra */
 footer .player_right{
-    /* flex-grow: 1; */
             /* background-color: purple; */
         width: 30%;
         height: 100%;
@@ -143,7 +140,6 @@ footer .player_right ul li{
 footer .player_right ul:last-child li{
     margin-right: 0;
 }
-
 footer .player_right .progression{
     display: inline-block;
     vertical-align: middle;
@@ -152,7 +148,6 @@ footer .player_right .progression{
     background-color: royalblue;
     border-radius: 3px;
 }
-
 footer .player_right .progression::after{
     content: "";
     display: block;
@@ -179,6 +174,9 @@ footer .player_right .progression::after{
 
 /* Da 100px a 552 PX */
 @media screen and (min-width: 400px) and  (max-width:552px) {
+    section{
+        border: 5px solid white;
+    }
     footer .player_left {
         width: 40%;
     }
@@ -198,7 +196,6 @@ footer .player_right .progression::after{
     footer .upper_player ul li{
         margin: 5px;
     }
-
     footer .player_middle  i{
         transform: scale(0.5);
     }
@@ -232,11 +229,6 @@ footer .player_right .progression::after{
     }
     footer .player_right .progression{
         display: none;
-    }
-
-
-    section{
-        border: 5px solid white;
     }
 }
 
@@ -311,8 +303,6 @@ footer .player_right .progression::after{
         width: 65%;
         margin-right: -20px;
     }
-    
-    
 }
 
 /* XXS fino a 4000 */

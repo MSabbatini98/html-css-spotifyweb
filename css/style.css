@@ -42,6 +42,7 @@ body .btn_upgrade{
 body .banner_top .btn_upgrade{
     margin-right: 20px;
 }
+
 /* scrollbar */
 ::-webkit-scrollbar {
     width: 5px;
@@ -61,11 +62,7 @@ body .banner_top .btn_upgrade{
 }
 
 
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
+
 
 /* !      RESPONSIVE:                    */
 /* !  approccio mobile first             */
@@ -107,3 +104,18 @@ main .too_small img{
         border-color: silver;
     }
 } */
+
+.empty{
+    visibility: hidden;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

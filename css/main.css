@@ -32,7 +32,6 @@ header ul li {
 header ul li:hover {
     color:white;
 }
-
 header ul li#evidenza::before{
     content: '';
     position: absolute;
@@ -50,7 +49,6 @@ header ul li#evidenza::before{
 section{
     margin: 20px;
         /* border: 5px solid violet; */
-
 }
 main h2{
     font-size: 18px;
@@ -67,52 +65,58 @@ main .overlay_effect{
     color: white;
     opacity: 0;
 }
-
+main .about_song{
+    width: 100%;
+}
 
 /*  ******************* section recently played */
 main h3{
     color: white;
     font-size: 14px;
+    text-transform: capitalize;
     padding: 20px 0 15px 0;
 }
 main .song_box small {
     color:  #7d7f84;
     font-size: 12px;
 }
-.song_slide{
+main .song_slide{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-content: flex-start;
 }
-.song_box{
+main .song_box{
+    max-width: 180px;
+    width: 60vw; /*Perchè funziona tutto con vw ? Don't know, dont' care. */
     position: relative;
     padding: 5px;
     text-align: center;
         /* border: turquoise 2px solid; */
 }
-.song_box:hover {
+main .song_box:hover {
     cursor: pointer;
 }
-#recent .song_box:hover img, 
-#jump .song_box:hover img{
+main #recent .song_box:hover img, 
+main #jump .song_box:hover img{
     opacity: 0.5;
 }
-.song_box:hover .overlay_effect{
+main .song_box:hover .overlay_effect{
     opacity: 1;
     z-index: 10;
 }
-.song_box img {
+main .song_box img {
     width:100% ;
     max-width: 180px;
 }
-.song_album {
+main .song_album {
     width: 180px;
     height: auto;
 }
+
 /* ******************************* section jump */
-#jump .song_slide, 
-#popular .song_slide{
+main #jump .song_slide, 
+main #popular .song_slide{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -120,13 +124,8 @@ main .song_box small {
 }
 
 /* **************************** section popular */
-
-#popular img{
+main #popular img{
     border-radius: 50%;    
-}
-
-.about_song{
-    width: 100%;
 }
 
 /* !      RESPONSIVE:                    */
@@ -145,12 +144,12 @@ main .song_box small {
         /* background-color: #141922; */
         padding: 90px 0 90px 50px;
     }
-    .song_slide{
+    main .song_slide{
         display: flex;
         flex-flow: row wrap;
 
     }
-    .song_box{
+    main .song_box{
         flex: 50%;
     }
 
@@ -162,41 +161,38 @@ main .song_box small {
 /*  S = 639 */
 /* da 552 a 639 */
 @media screen and (min-width: 553px) and (max-width:639px)  {
-    section{
+    /* section{
         border: 5px solid red;
-    }
-    .song_slide{
+    } */
+    main .song_slide{
         display: flex;
         flex-flow: row wrap;
 
     }
-    .song_box{
+    main .song_box{
         flex: 50%;
     }
-
 }
 
 /*  M = 878px*/
 @media screen and (min-width: 640px) and  (max-width:878px) {
-    section{
+    /* section{
         border: 5px solid blue;
-    }
+    } */
     .song_slide{
         display: flex;
         justify-content: flex-start;
         flex-flow: row wrap;
-
     }
     .song_box{
         flex: 25%;
         max-width: 25%;
     }
-
 }
 
 /*  L = 1440 */
-@media screen and (min-width: 879px) and  (max-width:1440px) {
+/* @media screen and (min-width: 879px) and  (max-width:1440px) {
     section{
         border: 5px solid greenyellow;
     }
-}
+} */
