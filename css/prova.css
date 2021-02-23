@@ -1,0 +1,17 @@
+body{
+    margin: 100px;
+    background-color: blue;
+    border: 10px solid white;
+}
+.song_action{
+    position: relative;
+}
+
+.empty:active{
+    visibility: hidden;
+}
+.save_song .active{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

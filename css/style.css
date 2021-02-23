@@ -38,6 +38,7 @@ body .btn_upgrade{
     border: 1px solid  white;
     border-radius: 23px;
     cursor: pointer;
+    transition: 2s;
 }
 body .banner_top .btn_upgrade{
     margin-right: 20px;
@@ -53,33 +54,14 @@ body .banner_top .btn_upgrade:hover{
         left: 50px;
     }
 }
-
-/* todo warning screen too small */
-/* main .too_small{
-    display: none;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #141922;
-}
-main .too_small img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-@media screen and (max-width:300px)  {
-    *{
+@media screen and (max-height: 500px){
+    body .banner_top {
         display: none;
     }
-    main .too_small{
-        display: block;
-        z-index: 15;
+    main {
+        padding: 0px 0 90px 230px;
     }
-    section{
-        border-color: silver;
-    }
-} */
-
+}
 .empty{
     visibility: hidden;
 }

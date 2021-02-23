@@ -144,19 +144,26 @@ footer .upper_player .fa-play-circle{
 footer .player_middle .upper_player li:hover i{
     color: #adff2f;
 }
-/* footer .player_middle .lower_player:hover::before{
+footer .player_middle .lower_player:hover .progression::before{
+    background-color: #adff2f;
+}
+footer .player_middle .lower_player:hover .progression::after{
     content: "";
     display: block;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
     right: 50%;
     height: 8px;
     width: 8px;
-    background-color: red;
-    border-radius: 3px;
-} */
+    z-index: 5;
+    transform: scale(1.75);
+    background-color: greenyellow;
+    border-radius: 50%;
+    -webkit-box-shadow: -2px 0px 4px 0px rgba(51, 101, 71, 0.75);
+    -moz-box-shadow:    -2px 0px 4px 0px rgba(51, 101, 71, 0.75);
+    box-shadow:         -2px 0px 4px 0px rgba(51, 101, 71, 0.75);
+}
 
 
 /* ????????????????????? parte destra */
