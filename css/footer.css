@@ -42,6 +42,7 @@ footer .song_info #song_author{
 }
 footer .song_action{
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     flex-direction: row;
     width: auto;
@@ -51,12 +52,30 @@ footer .song_action i {
     margin: 10px 5px 10px 15px;
 }
 
+/* !!!!!!!!!!!!! effetti player_left */
+footer .player_left .song_action .save_song:hover i,
+footer .player_left .song_action .folder:hover i {
+    color: #adff2f;
+}
+.save_song .active{
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+.save_song:active .active{
+    visibility: visible;
+}
+.song_action .folder, 
+.song_action .save_song{
+    cursor: pointer;
+}
+
 /* ????????????????????? parte centrale */
 footer .player_middle{
     width: 50%;
     padding-top: 10px;
         /* background-color: red; */
-
 }
 footer .fas, footer .far{
     color: white;
@@ -68,6 +87,7 @@ footer .upper_player {
     color: white;
 }
 footer .upper_player ul li{
+    position: relative;
     display: inline-block;
     list-style: none;
     line-height: 25px;
@@ -91,6 +111,7 @@ footer .player_middle .lower_player small{
 }
 footer .progression{
     height: 8px;
+    position: relative;
 }
 footer .progression p{
     visibility: hidden;
@@ -104,7 +125,7 @@ footer .player_middle .progression{
     padding: 0 10px;
     border-radius: 3px;
 }
-footer .player_middle .progression::after{
+footer .player_middle .progression::before{
     content: "";
     display: block;
     position: absolute;
@@ -119,11 +140,30 @@ footer .upper_player .fa-play-circle{
     transform: scale(2);
 }
 
+/* !!!!!!!!!!!! Effetti player_middle */
+footer .player_middle .upper_player li:hover i{
+    color: #adff2f;
+}
+/* footer .player_middle .lower_player:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    height: 8px;
+    width: 8px;
+    background-color: red;
+    border-radius: 3px;
+} */
+
+
 /* ????????????????????? parte destra */
 footer .player_right{
-            /* background-color: purple; */
-        width: 30%;
-        height: 100%;
+        /* background-color: purple; */
+    width: 30%;
+    height: 100%;
 }
 footer .player_right ul{
     display: flex;
@@ -145,8 +185,9 @@ footer .player_right .progression{
     vertical-align: middle;
     position: relative;
     height: 6px;
-    background-color: royalblue;
+    background-color: #c1c1c1;
     border-radius: 3px;
+    margin: 0 0 3px 3px;
 }
 footer .player_right .progression::after{
     content: "";
@@ -156,9 +197,14 @@ footer .player_right .progression::after{
     bottom: 0;
     left: 0;
     right: 25%;
-    background-color: #c1c1c1;
+    background-color: #adff2f;
     border-radius: 3px;
 } 
+
+/* !!!!!!!!!!!! Effetti player_right */
+footer .player_right li:hover i{
+    color: #adff2f;
+}
 
 /* !      RESPONSIVE:                    */
 /* !  approccio mobile first             */

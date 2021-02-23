@@ -29,8 +29,10 @@ header ul li {
     color: #7d7f84;
         /* border: 2px solid green; */
 }
+/* !!!!!!!!!!!!!!!! Effetti Header */
 header ul li:hover {
     color:white;
+    transform: scale(1.2);
 }
 header ul li#evidenza::before{
     content: '';
@@ -139,7 +141,9 @@ main #popular img{
 /*  XS = 552 px approccio mobile first*/
 /* Da 100px a 552 PX */
 @media screen and (min-width: 100px) and  (max-width:552px) {
-
+    section{
+        border: 5px solid white;
+    }
     main{
         /* background-color: #141922; */
         padding: 90px 0 90px 50px;
@@ -152,22 +156,17 @@ main #popular img{
     main .song_box{
         flex: 50%;
     }
-
-    section{
-        border: 5px solid white;
-    }
 }
 
 /*  S = 639 */
 /* da 552 a 639 */
 @media screen and (min-width: 553px) and (max-width:639px)  {
-    /* section{
+    section{
         border: 5px solid red;
-    } */
+    }
     main .song_slide{
         display: flex;
         flex-flow: row wrap;
-
     }
     main .song_box{
         flex: 50%;
@@ -176,9 +175,9 @@ main #popular img{
 
 /*  M = 878px*/
 @media screen and (min-width: 640px) and  (max-width:878px) {
-    /* section{
+    section{
         border: 5px solid blue;
-    } */
+    }
     .song_slide{
         display: flex;
         justify-content: flex-start;

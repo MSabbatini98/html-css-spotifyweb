@@ -43,35 +43,10 @@ body .banner_top .btn_upgrade{
     margin-right: 20px;
 }
 
-/* scrollbar */
-::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+/* !!!!!!!!!!!!! effetti banner_top */
+body .banner_top .btn_upgrade:hover{
+    transform: scale(1.1);
 }
-::-webkit-scrollbar-thumb {
-    background: #adff2f;
-    border-radius: 15px;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: #c8c8c8;
-}
-::-webkit-scrollbar-track{
-    background: black;
-    border-radius: 5px;
-    box-shadow: inset 7px 10px 12px #000;
-}
-
-
-
-
-/* !      RESPONSIVE:                    */
-/* !  approccio mobile first             */
-/* !  XS =  552px                        */
-/* !  S  =  639px                        */
-/* !  M  =  878px                        */
-/* !  L  =  1440px                       */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
 /*  XS = 552 px approccio mobile first*/
 @media screen and  (max-width:552px) {
     body .banner_top {
@@ -115,7 +90,33 @@ main .too_small img{
 }
 .line-clamp {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #adff2f;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #c8c8c8;
+}
+::-webkit-scrollbar-track{
+    background: black;
+    border-radius: 5px;
+    box-shadow: inset 7px 10px 12px #000;
+}
+
+/* !      RESPONSIVE:                    */
+/* !  approccio mobile first             */
+/* !  XS =  552px                        */
+/* !  S  =  639px                        */
+/* !  M  =  878px                        */
+/* !  L  =  1440px                       */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

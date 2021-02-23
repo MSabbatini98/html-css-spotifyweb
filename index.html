@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@
         <div class="small_aside">
             <div class="top_part_xs">
                 <div class ="img_xs_logo" >
-                   <a href="" id="logo_xs">
+                   <a href="#top" id="logo_xs">
                        <img  src="img/aside/logo-small.svg" alt="Small logo">
                     </a> 
                 </div>
@@ -144,7 +144,7 @@
                         <i class="far fa-play-circle"></i>
                     </div>
                     <img src="img/songs/four_season_vivaldo.jpg" alt="Album Vivaldi 4 stagioni">
-                    <h3>Le quattro stagioni: Vivaldi</h3>
+                    <h3  class ="line-clamp">Le quattro stagioni: Vivaldi</h3>
                     <small class ="line-clamp">Philarmonic chamber group city of Prague</small>
                 </div>
                 <div class="song_box">
@@ -231,12 +231,13 @@
             </div>
             <div class="song_action">
                 <div class="save_song">
-<!-- todo active colora verde il cuore -->
+                    <i class="fas fa-heart active"></i>
                     <i class="far fa-heart"></i>
                 </div>
                 <div class="folder">
-<!-- todo hover bianco -->
-                    <i class="far fa-folder"></i>
+                    <a href="#">
+                        <i class="far fa-folder"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -245,9 +246,9 @@
                 <ul>
 <!-- todo effetto active colore verde e pallino sotto  -->
                     <li><i class="fas fa-random"></i></li>
-<!-- todo effetti hover -->
                     <li><i class="fas fa-step-backward"></i></li>
-<!-- todo active inverte bianco e nero nell'icona -->
+<!-- todo active inverte bianco e nero nell'icona  -->
+<!-- (fare come con gli hearts... forse) -->
                     <li><i class="far fa-play-circle"></i></li>
                     <li><i class="fas fa-step-forward"></i></li>
                     <li><i class="fas fa-redo-alt"></i></li>
@@ -270,6 +271,7 @@
                 <li class="footer_icon">
                     <i class="fas fa-desktop"></i>
                 </li>
+<!-- todo fixare colori barre progresso -->
                 <li id="footer_volume">
 <!-- todo   animazione w/ keyframes -->
 <!-- todo   0-20% min, 20-50% med, 50-100% max-->
