@@ -27,6 +27,7 @@ header ul li {
     padding: 5px;
     cursor: pointer;
     color: #7d7f84;
+    transition: 1s;
         /* border: 2px solid green; */
 }
 /* !!!!!!!!!!!!!!!! Effetti Header */

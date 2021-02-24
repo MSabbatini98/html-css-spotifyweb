@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="top">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -220,7 +220,9 @@
             </div>
         </section>
     </main>
+    <!-- footer -->
     <footer>
+        <!-- player left -->
         <div class="player_left">
             <div class="song_cover">
                 <img src="img/songs/Skrillex_scary_monsters.jpg" alt="Album di Skrillex">
@@ -241,21 +243,18 @@
                 </div>
             </div>
         </div>
+        <!-- player middle -->
         <div class="player_middle">
             <div class="upper_player">
                 <ul>
-<!-- todo effetto active colore verde e pallino sotto  -->
                     <li><i class="fas fa-random"></i></li>
                     <li><i class="fas fa-step-backward"></i></li>
-<!-- todo active inverte bianco e nero nell'icona  -->
-<!-- (fare come con gli hearts... forse) -->
                     <li><i class="far fa-play-circle"></i></li>
                     <li><i class="fas fa-step-forward"></i></li>
                     <li><i class="fas fa-redo-alt"></i></li>
                 </ul>
             </div>
             <div class="lower_player">
-<!-- todo hover diventa verde e compare il pallino bianco -->
                 <small class="progression_played_song">0:23</small>
                 <div class="progression">
                     <p>can't make empty div</p>
@@ -263,6 +262,7 @@
                 <small class="duration_played_song"> 4:20</small>
             </div>
         </div>
+        <!-- player right -->
         <div class="player_right">
             <ul>
                 <li class="footer_icon">
@@ -271,13 +271,8 @@
                 <li class="footer_icon">
                     <i class="fas fa-desktop"></i>
                 </li>
-<!-- todo fixare colori barre progresso -->
                 <li id="footer_volume">
-<!-- todo   animazione w/ keyframes -->
-<!-- todo   0-20% min, 20-50% med, 50-100% max-->
-                    <!-- <i class="fas fa-volume-off" id="min"></i>
-                    <i class="fas fa-volume-down" id="med"></i> -->
-                    <i class="fas fa-volume-up" id="max"></i>
+                    <i class="fas fa-volume-up"></i>
                     <div class="progression">
                         <p>Not Empty :D </p>
                     </div>

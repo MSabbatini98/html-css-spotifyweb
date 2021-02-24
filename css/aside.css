@@ -111,12 +111,12 @@ aside .playlist h3{
     text-transform: capitalize;
 }
 
-/* ! effetti  */
+/* !!!!!!!!! effetti  */
 aside .new_playlist:hover,
 aside .playlist li:hover, 
 aside li:hover h3,
 aside .bottom_aside .install_app:hover p,
-aside .bottom_aside .user:hover p {
+aside .bottom_aside .user:hover .install_app p {
     color: #d2d2d2;
     cursor: pointer;
 }
@@ -165,10 +165,12 @@ aside .profile_pic,
 aside .user p{
     display: inline-block;
     vertical-align: middle;
+    font-weight: bolder;
 }
 aside .profile_pic img {
     width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 
 
@@ -210,7 +212,7 @@ aside .profile_pic img {
     }
     aside .top_part_xs .img_menu_xs img {
         transform: scale(1.8) ;
-        /* filter to make #a3a3a3*/
+        /* filter to make #a3a3a3. Non è il modo migliore ma non sapevo come colorare le SVG create da me, e sono troppo fiero per non usarle (e troppo pigro per cambiargli colore dall'editor) */
         filter: invert(60%) sepia(58%) saturate(0%) hue-rotate(228deg) brightness(97%) contrast(90%);
     }
     aside .top_part_xs a#logo_xs{
@@ -218,7 +220,7 @@ aside .profile_pic img {
     }
     aside .top_part_xs .img_menu_xs #home{
         transform: scale(1.3);
-        /* trasforma #a3a3a3 in #d2d2d2 */
+        /* trasforma #a3a3a3 in #d2d2d2. Non è il modo migliore ma non sapevo come colorare le SVG create da me, e sono troppo fiero per non usarle (e troppo pigro per cambiargli colore dall'editor) */
         filter: invert(64%) sepia(90%) saturate(0%) hue-rotate(237deg) brightness(122%) contrast(75%);
     }
     aside .top_part_xs a{

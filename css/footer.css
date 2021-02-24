@@ -93,6 +93,94 @@ footer .upper_player ul li{
     line-height: 25px;
     margin: 10px 10px 0 10px;
 }
+footer .upper_player .fa-play-circle{
+    transform: scale(2);
+}
+footer .upper_player li .fa-step-backward{
+    overflow-x: hidden;
+}
+footer .upper_player .fa-step-backward:hover,
+footer .upper_player .fa-step-forward:hover{
+    animation-name: slide;
+    animation-duration: 2300ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes slide {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(8px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(-8px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+footer .upper_player .fa-play-circle:hover {
+    animation-name: pulse;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes pulse {
+    0% {
+        transform:scale(2);
+    }
+    25% {
+        transform:scale(2.5);
+    }
+    50% {
+        transform:scale(2);
+    }
+    75% {
+        transform:scale(1.5);
+    }
+    100% {
+        transform:scale(2);
+    }
+}
+/* Ruota l'icona "ripeti" */
+footer .upper_player .fa-redo-alt:hover {
+    animation-name: spin;
+    animation-duration: 2300ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+/* flippa lungo la x l'icona randomize */
+footer .upper_player .fa-random:hover {
+    animation-name: flipY;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes flipY {
+    0% {
+       transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(180deg);
+    }
+    100% {
+       transform: rotateX(0deg);
+    }
+ } 
+
 footer .lower_player {
     width: 100%;
     text-align: center;
@@ -136,9 +224,7 @@ footer .player_middle .progression::before{
     background-color: #c1c1c1;
     border-radius: 3px;
 }
-footer .upper_player .fa-play-circle{
-    transform: scale(2);
-}
+
 
 /* !!!!!!!!!!!! Effetti player_middle */
 footer .player_middle .upper_player li:hover i{
@@ -192,11 +278,11 @@ footer .player_right .progression{
     vertical-align: middle;
     position: relative;
     height: 6px;
-    background-color: #c1c1c1;
+    background-color: #5a5a5a;
     border-radius: 3px;
     margin: 0 0 3px 3px;
 }
-footer .player_right .progression::after{
+footer .player_right .progression::before{
     content: "";
     display: block;
     position: absolute;
@@ -204,13 +290,34 @@ footer .player_right .progression::after{
     bottom: 0;
     left: 0;
     right: 25%;
-    background-color: #adff2f;
+    background-color: #c1c1c1;
     border-radius: 3px;
 } 
 
 /* !!!!!!!!!!!! Effetti player_right */
 footer .player_right li:hover i{
     color: #adff2f;
+}
+footer .player_right #footer_volume:hover .progression::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 2px;
+    right: 25%;
+    height: 8px;
+    width: 8px;
+    z-index: 5;
+    transform: scale(1.75);
+    background-color: #adff2f;
+    border-radius: 50%;
+    -webkit-box-shadow: -2px 0px 4px 0px rgba(51, 101, 71, 0.75);
+    -moz-box-shadow:    -2px 0px 4px 0px rgba(51, 101, 71, 0.75);
+    box-shadow:         -2px 0px 4px 0px rgba(51, 101, 71, 0.75);
+}
+
+footer .player_right #footer_volume:hover .progression::before{
+    background-color: #adff2f;
 }
 
 /* !      RESPONSIVE:                    */
@@ -420,10 +527,3 @@ footer .player_right li:hover i{
     }
 }
 
- /*todo Volume che esce con transizione dal basso  */
-/*@media screen and (max-width: 641px) {
-    #footer_volume:hover {
-        
-    }
-
-} */

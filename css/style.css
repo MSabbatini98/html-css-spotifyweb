@@ -1,7 +1,7 @@
 @import "aside.css";
 @import "main.css";
 @import "footer.css";
-
+@import "animations.css"
 * {
     padding: 0;
     margin: 0;
@@ -45,9 +45,7 @@ body .banner_top .btn_upgrade{
 }
 
 /* !!!!!!!!!!!!! effetti banner_top */
-body .banner_top .btn_upgrade:hover{
-    transform: scale(1.1);
-}
+
 /*  XS = 552 px approccio mobile first*/
 @media screen and  (max-width:552px) {
     body .banner_top {
