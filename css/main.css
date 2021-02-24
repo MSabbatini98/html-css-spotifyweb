@@ -91,7 +91,7 @@ main .song_slide{
 }
 main .song_box{
     max-width: 180px;
-    width: 60vw; /*Perchè funziona tutto con vw ? Don't know, dont' care. */
+    width: calc(100% / 6); 
     position: relative;
     padding: 5px;
     text-align: center;
@@ -142,9 +142,9 @@ main #popular img{
 /*  XS = 552 px approccio mobile first*/
 /* Da 100px a 552 PX */
 @media screen and (min-width: 100px) and  (max-width:552px) {
-    section{
+    /* section{
         border: 5px solid white;
-    }
+    } */
     main{
         /* background-color: #141922; */
         padding: 90px 0 90px 50px;
@@ -162,9 +162,9 @@ main #popular img{
 /*  S = 639 */
 /* da 552 a 639 */
 @media screen and (min-width: 553px) and (max-width:639px)  {
-    section{
+    /* section{
         border: 5px solid red;
-    }
+    } */
     main .song_slide{
         display: flex;
         flex-flow: row wrap;
@@ -176,9 +176,9 @@ main #popular img{
 
 /*  M = 878px*/
 @media screen and (min-width: 640px) and  (max-width:878px) {
-    section{
+    /* section{
         border: 5px solid blue;
-    }
+    } */
     .song_slide{
         display: flex;
         justify-content: flex-start;

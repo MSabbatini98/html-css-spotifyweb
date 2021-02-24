@@ -56,7 +56,7 @@ body .banner_top .btn_upgrade{
         display: none;
     }
     main {
-        padding: 0px 0 90px 230px;
+        padding-top: 10px;
     }
 }
 .empty{

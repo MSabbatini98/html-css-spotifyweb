@@ -334,9 +334,9 @@ footer .player_right #footer_volume:hover .progression::before{
 
 /* Da 100px a 552 PX */
 @media screen and (min-width: 400px) and  (max-width:552px) {
-    section{
+    /* section{
         border: 5px solid white;
-    }
+    } */
     footer .player_left {
         width: 40%;
     }
@@ -395,9 +395,9 @@ footer .player_right #footer_volume:hover .progression::before{
 /*  S = 639 */
 /* da 552 a 639 */
 @media screen and (min-width: 553px) and (max-width:639px)  {
-    section{
+    /* section{
         border: 5px solid red;
-    }
+    } */
     footer .upper_player ul li {
         margin: 10px 5px;
     }
@@ -437,9 +437,9 @@ footer .player_right #footer_volume:hover .progression::before{
 
 /*  M = 878px*/
 @media screen and (min-width: 640px) and  (max-width:878px) {
-    section{
+    /* section{
         border: 5px solid blue;
-    }
+    } */
     footer .player_right ul{
         display: flex;
         flex-direction: row;
@@ -467,7 +467,9 @@ footer .player_right #footer_volume:hover .progression::before{
 
 /* XXS fino a 4000 */
 @media screen and (max-width: 400px) {
-
+    /* section{
+        border: 5px solid plum;
+    } */
     footer .player_left {
         width: 40%;
     }
@@ -522,8 +524,6 @@ footer .player_right #footer_volume:hover .progression::before{
         margin: 5px 0;
         text-align: center;
     }
-    section{
-        border: 5px solid plum;
-    }
+
 }
 
